@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="initial-scale=1.0, width=device-width,user-scalable=no" />
+   <title>Calculator</title>
+  </head>
+  <body>
+   <link rel="stylesheet" href="style.css">
+    <div class="box">
+     <form action="" name="calculator"> 
+     <input class="disp" type="text" id="display" disabled>  
+     <br>  
+     <div class="r1">
+      <input class="like" type="button" value="♡" href="https://bit.ly/2k4xcc">
+      <input class="dm" type="button" value="🌙">
+      <input class="ope" type="button" value="%" onclick="calculator.display.value += '%'">
+      <input class="ope" type="button" value="/" onclick="calculator.display.value += '/'">  
+     </div>
+     <br>  
+     <div class="r2">
+      <input class="num" type="button" value="1" onclick="calculator.display.value += '1'">
+      <input class="num" type="button" value="2" onclick="calculator.display.value += '2'">
+      <input class="num" type="button" value="3" onclick="calculator.display.value += '3'">
+      <input class="ope" type="button" value="+" onclick="calculator.display.value += '+'">
+     </div>
+     <br>  
+     <div class="r3">
+      <input class="num" type="button" value="4" onclick="calculator.display.value += '4'">
+      <input class="num" type="button" value="5" onclick="calculator.display.value += '5'">
+      <input class="num" type="button" value="6" onclick="calculator.display.value += '6'">
+      <input class="ope" type="button" value="-" onclick="calculator.display.value += '-'">
+     </div>
+     <br>
+     <div class="r4">
+      <input class="num" type="button" value="7" onclick="calculator.display.value += '7'">
+      <input class="num" type="button" value="8" onclick="calculator.display.value += '8'">
+      <input class="num" type="button" value="9" onclick="calculator.display.value += '9'">
+      <input class="ope" type="button" value="*" onclick="calculator.display.value += '*'">
+     </div>
+     <br>  
+     <div class="r5">
+      <input class="num" type="button" value="." onclick="calculator.display.value += '.'">
+      <input class="num" type="button" value="0" onclick="calculator.display.value += '0'">
+      <input class="opex" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+      <input class="ope" type="button" value="c" onclick="calculator.display.value = ''">
+    </div>   
+   </form>
+  </div>
+ </body>
+</html>
